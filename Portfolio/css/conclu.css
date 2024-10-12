@@ -1,0 +1,39 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding-top: 50px; 
+    box-sizing: border-box;
+}
+
+.page-title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.heart {
+    color: #FFC0CB;
+    font-size: 1.2em;
+}
+
+.typing-text {
+    font-size: 18px;
+    line-height: 1.6;
+    white-space: pre-wrap;
+    max-width: 800px;
+    text-align: justify; 
+    margin: 0 auto; 
+}
+
+.typing-text::after {
+    content: '|';
+    animation: blink 0.7s infinite;
+}
+
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}

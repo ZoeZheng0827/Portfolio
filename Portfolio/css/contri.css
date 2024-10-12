@@ -1,0 +1,49 @@
+.container {
+    padding: 11px;
+}
+
+.floating-boxes {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    margin-bottom: 17px;
+    gap: 15px;
+}
+.box-container {
+    width: 220px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.box {
+    width: 150px;
+    height: 150px;
+    background-color: #FFC0CB;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px; 
+    text-decoration: none;
+    color: #1a3a5c;
+    font-weight: bold;
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.5), 
+                0 0 20px rgba(255, 255, 255, 0.3);
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.box-description {
+    text-align: justify;
+    margin: 0 auto;
+    font-size: 13px;
+    color: #ffffff;
+    max-width: 200px; 
+    line-height: 1.6; 
+    hyphens: auto;
+}

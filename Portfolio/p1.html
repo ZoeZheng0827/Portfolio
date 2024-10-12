@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Ideation</title>
+    <link rel="stylesheet" href="./css/page_style.css">
+    <script src="./js/page1.js"></script>
+</head>
+<body>
+    <div class="stars"></div>
+    <a href="contri.html" class="back-button">Back</a>
+    <h1>Design Ideation</h1>
+    <div class="image-gallery">
+        <img src="./media/p1_1.png" alt="Ideation 1" class="gallery-image" onclick="openModal(0)">
+        <img src="./media/p1_2.jpg" alt="Ideation 2" class="gallery-image" onclick="openModal(1)">
+        <img src="./media/p1_3.png" alt="Ideation 3" class="gallery-image" onclick="openModal(2)">
+        <img src="./media/p1_4.png" alt="Ideation 4" class="gallery-image" onclick="openModal(3)">
+    </div>
+
+    <div id="lightboxModal" class="modal">
+        <span class="close">&times;</span>
+        <div class="modal-content">
+            <img id="lightboxImage" src="">
+            <a class="prev">&#10094;</a>
+            <a class="next">&#10095;</a>
+            <div class="star-icon-container" onclick="openDescriptionPopup()">
+                <span class="star-icon">&#9733;</span>
+                <span class="description-text">Description</span>
+            </div>
+        </div>
+    </div>
+
+    <div id="descriptionPopup" class="popup">
+        <div class="popup-content">
+            <span class="close-popup">&times;</span>
+            <p id="imageDescription"></p>
+        </div>
+    </div>
+</body>
+</html>
